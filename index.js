@@ -4,7 +4,7 @@ import { Configuration, OpenAIApi } from "openai";
 config();
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY, // don't forget to create ".env" file with the line "OPENAI_API_KEY=your_secret_key here"
+  apiKey: process.env.OPENAI_API_KEY, 
 });
 const openai = new OpenAIApi(configuration);
 
@@ -12,7 +12,7 @@ async function chat(prompt, setup) {
   const response = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: [
-      { role: "system", content: setup || "Answer as a pirate" },
+      { role: "system", content: setup },
       {
         role: "user",
         content: prompt,
@@ -26,8 +26,7 @@ async function chat(prompt, setup) {
   return answer;
 }
 
-const setup = `Answer as a Batman`;
-const prompt = `Say hello to my YouTube subscribers, 
-it's 20-ish of them yet.`;
+const setup = `Answer as Homero Simpson drunk`;
+const prompt = `Homero como se llama tu hija menor?`;
 
 console.log(await chat(prompt, setup));
