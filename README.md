@@ -1,6 +1,3 @@
-# Chat GPT in just 30 seconds!
-
-In this repository, you'll find a simple Node.js script that demonstrates how to use the OpenAI Chat GPT API to generate natural language responses for your applications. With just a few lines of code, you can tap into the power of artificial intelligence and create chatbots, language translation tools, and more.
 
 ## Installation
 
