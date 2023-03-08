@@ -17,11 +17,3 @@ That's it! You should see the response from the Chat GPT API printed to your con
 
 Feel free to modify and customize the `chat()` function to fit your specific use case. You can experiment with different prompts, message roles, and API parameters to create a wide range of natural language responses.
 
-## Resources
-
-- [OpenAI API Documentation](https://beta.openai.com/docs/api-reference/introduction)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
